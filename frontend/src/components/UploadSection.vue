@@ -44,7 +44,7 @@ export default {
       try {
         const form = new FormData()
         form.append('file', this.file)
-        const res = await axios.post('http://127.0.0.1:8000/analyze', form)
+        const res = await axios.post('https://datalens-backend-soxd.onrender.com', form)
         this.$emit('data-analyzed', res.data)
       } catch (e) {
         this.error = 'Analysis failed. Make sure backend is running on port 8000.'
