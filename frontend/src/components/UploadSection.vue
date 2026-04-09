@@ -15,6 +15,8 @@
 
     <div class="upload-hint">
       <p>CSV should only have have columns like: <span class="hint-tag">name</span> <span class="hint-tag">age</span> <span class="hint-tag">category</span> <span class="hint-tag">spend</span></p>
+      <p>Or <a href="https://github.com/harshitkapoor03/customer-dashboard" target="_blank" class="github-link">download sample CSV from GitHub</a></p>
+
     </div>
 
     <button class="analyze-btn" :disabled="!file || loading" @click="analyze">
@@ -56,7 +58,13 @@ export default {
 
 <style scoped>
 .upload-wrap { display: flex; flex-direction: column; align-items: center; gap: 16px; }
-
+.github-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+.github-link:hover {
+  text-decoration: underline;
+}
 .upload-box {
   width: 100%; max-width: 560px; border: 2px dashed var(--border);
   border-radius: 16px; padding: 48px 32px; text-align: center;
