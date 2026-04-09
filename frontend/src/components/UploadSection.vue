@@ -14,7 +14,7 @@
     </div>
 
     <div class="upload-hint">
-      <p>CSV should have columns like: <span class="hint-tag">name</span> <span class="hint-tag">age</span> <span class="hint-tag">category</span> <span class="hint-tag">spend</span></p>
+      <p>CSV should only have have columns like: <span class="hint-tag">name</span> <span class="hint-tag">age</span> <span class="hint-tag">category</span> <span class="hint-tag">spend</span></p>
     </div>
 
     <button class="analyze-btn" :disabled="!file || loading" @click="analyze">
